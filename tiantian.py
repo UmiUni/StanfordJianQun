@@ -117,7 +117,7 @@ def text_reply(msg):
     print(msg['ActualNickName'])
     print(msg['Content'])
     '''
-    if "@UIUC加群建群小助手" in msg['Content']:
+    if "@Stanford加群" in msg['Content']:
         replyS = get_response(msgS)
         if msg.actualNickName.count("@")>=2:
             msg.user.send(u'%s' % (replyS+'~想进群加我😊'))
