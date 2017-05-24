@@ -151,6 +151,7 @@ def text_reply(msg):
         #replyS = get_response(msgS) + ' ps:加我进群' 
         #msg.user.send(u'@%s\u2005I received: %s' % (msg.actualNickName, msg.text)
         #print("New Friend:"+ json.dumps(msg))
+    ''' 
     if(1==1):
         source = msg['FromUserName']
         # 处理文本消息
@@ -172,7 +173,6 @@ def text_reply(msg):
                         #print("prepare send2:")
                         itchat.send('%s: %s:\n%s' % (groups[source], msg['ActualNickName'], msg['Content']), item)
         # 处理分享消息
-       ''' 
         elif msg['Type'] == SHARING:
             if source in groups:
                 for item in groups.keys():
