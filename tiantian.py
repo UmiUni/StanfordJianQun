@@ -5,6 +5,7 @@ from itchat.content import *
 import sys  
 import json
 import time
+from time import sleep
 reload(sys)  
 sys.setdefaultencoding('utf8')
 freq = {}
@@ -86,19 +87,29 @@ def tuling_reply(msg):
     msgText = msg['Text']
     if "1" in msgText:
         pullMembersMore(msg, u'天天刷题', CurUserName)
+        sleep(0.2)
         pullMembersMore(msg, u'天天健身', CurUserName)
+        sleep(0.2)
         pullMembersMore(msg, u'天天剁手', CurUserName)
+        sleep(0.2)
     elif "2" in msgText:
         pullMembersMore(msg, u'天天refer', CurUserName)
+        sleep(0.2)
         pullMembersMore(msg, u'天天Hao', CurUserName)
+        sleep(0.2)
     elif "3" in msgText:
         pullMembersMore(msg, u'天天湾区二手车', CurUserName)
+        sleep(0.2)
         pullMembersMore(msg, u'天天湾区二手货', CurUserName)
+        sleep(0.2)
     elif "4" in msgText:
         pullMembersMore(msg, u'天天湾区租房', CurUserName)
+        sleep(0.2)
         pullMembersMore(msg, u'天天旧金山租房', CurUserName)
+        sleep(0.2)
     else:
         itchat.send_msg(vT, CurUserName)
+        sleep(0.2)
 
 def pullMembersMore(msg, chatroomName, CurUserName):
     cur_chatrooms = itchat.search_chatrooms(name=chatroomName)
