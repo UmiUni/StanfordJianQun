@@ -16,8 +16,8 @@ itchat.get_chatrooms(update=True)
 v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
 v1= u"回复 1 加CS刷题、竞赛、面试;健身;戒游戏群\n"
 v2= u"回复 2 加信用卡爱好者、hao羊毛爱好者群\n"
-v3= u"回复 3 加二手货、车群;\n"
-v4= u"回复 4 加租房群.\n"
+v3= u"回复 3 加湾区、旧金山二手货、车群;\n"
+v4= u"回复 4 加湾区、旧金山租房群.\n"
 vT =v0+v1+v2+v3+v4
 #Chaoran userid:@ef633e828340000b5518a18f66daefbf8f307a1fa96d405288a885014d8c25d5
 #汪灵欣 userid:@eb21513f32b62cd9773abc2fd5531ee05ca09af4ca926fbf896d8c89f29e46cc
@@ -98,14 +98,14 @@ def tuling_reply(msg):
         pullMembersMore(msg, u'天天Hao', CurUserName)
         sleep(0.2)
     elif "3" in msgText:
-        pullMembersMore(msg, u'天天湾区二手车', CurUserName)
+        pullMembersMore(msg, u'Stanford湾区二手车', CurUserName)
         sleep(0.2)
-        pullMembersMore(msg, u'天天湾区二手货', CurUserName)
+        pullMembersMore(msg, u'Stanford湾区二手货', CurUserName)
         sleep(0.2)
     elif "4" in msgText:
-        pullMembersMore(msg, u'天天湾区租房', CurUserName)
+        pullMembersMore(msg, u'Stanford湾区租房', CurUserName)
         sleep(0.2)
-        pullMembersMore(msg, u'天天旧金山租房', CurUserName)
+        pullMembersMore(msg, u'Stanford旧金山租房', CurUserName)
         sleep(0.2)
     else:
         itchat.send_msg(vT, CurUserName)
