@@ -18,14 +18,23 @@ v1= u"回复 1 加CS刷题、竞赛、面试;健身;戒游戏群\n"
 v2= u"回复 2 加信用卡爱好者、hao羊毛爱好者群\n"
 v3= u"回复 3 加湾区、旧金山二手货、车群;\n"
 v4= u"回复 4 加湾区、旧金山租房群.\n"
-v5= u"回复 5 加湾区饮食文化交流.\n"
-v6= u"回复 6 加湾区护肤品化妆品.\n"
-vT =v0+v1+v2+v3+v4+v5+v6
+v5= u"回复 5 加湾区实习工作群.\n"
+v6= u"回复 6 加湾区饮食文化交流.\n"
+v7= u"回复 7 加湾区护肤品化妆品.\n"
+vT =v0+v1+v2+v3+v4+v5+v6+v7
 #Chaoran userid:@ef633e828340000b5518a18f66daefbf8f307a1fa96d405288a885014d8c25d5
 #汪灵欣 userid:@eb21513f32b62cd9773abc2fd5531ee05ca09af4ca926fbf896d8c89f29e46cc
 #groups= {'@@6cdcfcb7dc00e7d546464ba702151143e1bf4aa9f72aa6e2559b86469e9a2481':'天天VIP','@@0515f86f31ec80ce4d4238a9ada8fdc0dd0900cc017f87c17df8ee49fb6d4663':'雷孙王'}
 #groups= {'@@d8b03e5ed3d34267d563c552a33af7b975e7375dd0a0499965292b2621fdee40':'万能总群2','@@8bd479db2f43c6e2bf8ba14caf6cb2297dd0bf66235e88760457ef9d2d323dd2':'万能总群3'}
 # 收到好友邀请自动添加好友
+
+groups={}
+#groups[getName(u'天天VIP')] = u'天天VIP'
+#groups[getName(u'雷孙王')] = u'雷孙王'
+#groups[getName(u'UIUC 万能总群2')] = u'万能总群2'
+#groups[getName(u'UIUC 万能总群3')] = u'万能总群3'
+groups[getName(u'UI食神带飞')] = u'UI食神带飞'
+groups[getName(u'Stanford湾区饮食')] = u'Stanford湾区饮食'
 
 def getName(chatroomName):
     itchat.get_chatrooms(update=True)
@@ -110,9 +119,12 @@ def tuling_reply(msg):
         pullMembersMore(msg, u'Stanford旧金山租房', CurUserName)
         sleep(0.5)
     elif "5" in msgText:
-        pullMembersMore(msg, u'湾区饮食文化交流', CurUserName)
+        pullMembersMore(msg, u'2017湾区实习工作群', CurUserName)
         sleep(0.5)
     elif "6" in msgText:
+        pullMembersMore(msg, u'Stanford湾区饮食', CurUserName)
+        sleep(0.5)
+    elif "7" in msgText:
         pullMembersMore(msg, u'Stanford湾区护肤品', CurUserName)
         sleep(0.5)
     else:
@@ -170,7 +182,7 @@ def text_reply(msg):
         #replyS = get_response(msgS) + ' ps:加我进群' 
         #msg.user.send(u'@%s\u2005I received: %s' % (msg.actualNickName, msg.text)
         #print("New Friend:"+ json.dumps(msg))
-    ''' 
+     
     if(1==1):
         source = msg['FromUserName']
         # 处理文本消息
@@ -199,8 +211,8 @@ def text_reply(msg):
                         # msg['Text']: 分享的标题
                         # msg['Url']: 分享的链接
                         itchat.send('%s: %s:\n%s\n%s' % (groups[source], msg['ActualNickName'], msg['Text'], msg['Url']), item)
-        '''
-'''
+        
+
 # 处理图片和视频类消息
 @itchat.msg_register([PICTURE, VIDEO], isGroupChat=True)
 def group_reply_media(msg):
