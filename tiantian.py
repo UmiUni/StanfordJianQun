@@ -228,7 +228,6 @@ def group_reply_media(msg):
                 itchat.send('%s: %s:' % (groups[source], msg['ActualNickName']), item)
                 itchat.send('@%s@%s' % ({'Picture': 'img', 'Video': 'vid'}.get(msg['Type'], 'fil'), msg['FileName']), item)
 '''
-'''
 def updateChatroom(chatroomName):
     cur_chatrooms = itchat.search_chatrooms(name=u'UIUC租房3群')
     detailedChatroom = itchat.update_chatroom(cur_chatrooms[0]['UserName'], detailedMember=False)
