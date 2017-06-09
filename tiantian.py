@@ -28,6 +28,13 @@ vT =v0+v1+v2+v3+v4+v5+v6+v7
 #groups= {'@@d8b03e5ed3d34267d563c552a33af7b975e7375dd0a0499965292b2621fdee40':'万能总群2','@@8bd479db2f43c6e2bf8ba14caf6cb2297dd0bf66235e88760457ef9d2d323dd2':'万能总群3'}
 # 收到好友邀请自动添加好友
 
+def getName(chatroomName):
+    itchat.get_chatrooms(update=True)
+    cur_chatrooms = itchat.search_chatrooms(name=chatroomName)
+    detailedChatroom = itchat.update_chatroom(cur_chatrooms[0]['UserName'], detailedMember=True)
+    #print(json.dumps(cur_chatrooms)+"\n")
+    return detailedChatroom["UserName"]
+
 groups={}
 #groups[getName(u'天天VIP')] = u'天天VIP'
 #groups[getName(u'雷孙王')] = u'雷孙王'
@@ -36,12 +43,6 @@ groups={}
 groups[getName(u'UI食神带飞')] = u'UI食神带飞'
 groups[getName(u'Stanford湾区饮食')] = u'Stanford湾区饮食'
 
-def getName(chatroomName):
-    itchat.get_chatrooms(update=True)
-    cur_chatrooms = itchat.search_chatrooms(name=chatroomName)
-    detailedChatroom = itchat.update_chatroom(cur_chatrooms[0]['UserName'], detailedMember=True)
-    #print(json.dumps(cur_chatrooms)+"\n")
-    return detailedChatroom["UserName"]
 
 #groups={}
 #groups[getName(u'天天VIP')] = u'天天VIP'
