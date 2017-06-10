@@ -35,6 +35,7 @@ def getName(chatroomName):
     #print(json.dumps(cur_chatrooms)+"\n")
     return detailedChatroom["UserName"]
 
+'''
 groups={}
 #groups[getName(u'天天VIP')] = u'天天VIP'
 #groups[getName(u'雷孙王')] = u'雷孙王'
@@ -52,6 +53,7 @@ groups[getName(u'Stanford湾区饮食')] = u'Stanford湾区饮食'
 #groups[getName(u'UIUC CS刷题小分队')] = u'UIUC刷题小分队'
 #groups[getName(u'天天刷题')] = u'天天刷题'
 
+'''
 @itchat.msg_register('Friends')
 def add_friend(msg):
     #print("add message:")
@@ -91,7 +93,7 @@ def tuling_reply(msg):
     print("userid:"+CurUserName+"\n") 
     if(CurUserName in usersDict):
         usersDict[CurUserName] = usersDict[CurUserName] + 1
-        if(usersDict[CurUserName] >= 7):
+        if(usersDict[CurUserName] >= 10):
             itchat.send_msg(u'您已达到今日加群上限，请明日再来～😊', CurUserName)
             return
     else:
@@ -184,6 +186,7 @@ def text_reply(msg):
         #msg.user.send(u'@%s\u2005I received: %s' % (msg.actualNickName, msg.text)
         #print("New Friend:"+ json.dumps(msg))
      
+    '''
     if(1==1):
         source = msg['FromUserName']
         # 处理文本消息
@@ -213,7 +216,9 @@ def text_reply(msg):
                         # msg['Url']: 分享的链接
                         itchat.send('%s: %s:\n%s\n%s' % (groups[source], msg['ActualNickName'], msg['Text'], msg['Url']), item)
         
+        '''
 
+'''
 # 处理图片和视频类消息
 @itchat.msg_register([PICTURE, VIDEO], isGroupChat=True)
 def group_reply_media(msg):
@@ -228,6 +233,7 @@ def group_reply_media(msg):
                 # 将图片或视频发送到其他需要同步消息的群聊
                 itchat.send('%s: %s:' % (groups[source], msg['ActualNickName']), item)
                 itchat.send('@%s@%s' % ({'Picture': 'img', 'Video': 'vid'}.get(msg['Type'], 'fil'), msg['FileName']), item)
+                '''
 '''
 def updateChatroom(chatroomName):
     cur_chatrooms = itchat.search_chatrooms(name=u'UIUC租房3群')
