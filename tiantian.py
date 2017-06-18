@@ -18,11 +18,10 @@ v1= u"回复 1 加CS刷题、竞赛、面试;健身;戒游戏群\n"
 v2= u"回复 2 加信用卡爱好者、hao羊毛爱好者群\n"
 v3= u"回复 3 加湾区、旧金山二手货、车群;\n"
 v4= u"回复 4 加湾区、旧金山租房群.\n"
-v5= u"回复 5 加湾区实习工作群.\n"
-v6= u"回复 6 加湾区饮食文化交流.\n"
-v7= u"回复 7 加湾区护肤品化妆品.\n"
-v8= u"回复 8 加Stanford校友群，非校友进此群杀全家，谢谢.\n"
-v9= u"回复 9 加Finding Yingying 群，家人校友都在努力～.\n"
+v6= u"回复 5 加湾区饮食文化交流，桌游群\n"
+v7= u"回复 6 加湾区护肤品化妆品.\n"
+v8= u"回复 7 加湾区实习工作群；Stanford校友群，非校友请勿进此群，谢谢.\n"
+v9= u"回复 8 加Finding Yingying 群，家人校友都在努力～.\n"
 vT =v0+v1+v2+v3+v4+v5+v6+v7+v8+v9
 #Chaoran userid:@ef633e828340000b5518a18f66daefbf8f307a1fa96d405288a885014d8c25d5
 #汪灵欣 userid:@eb21513f32b62cd9773abc2fd5531ee05ca09af4ca926fbf896d8c89f29e46cc
@@ -124,18 +123,19 @@ def tuling_reply(msg):
         pullMembersMore(msg, u'Stanford旧金山租房', CurUserName)
         sleep(0.5)
     elif "5" in msgText:
-        pullMembersMore(msg, u'2017湾区实习工作群', CurUserName)
+        pullMembersMore(msg, u'Stanford湾区桌游', CurUserName)
         sleep(0.5)
-    elif "6" in msgText:
         pullMembersMore(msg, u'Stanford湾区饮食', CurUserName)
         sleep(0.5)
-    elif "7" in msgText:
+    elif "6" in msgText:
         pullMembersMore(msg, u'Stanford湾区护肤品', CurUserName)
         sleep(0.5)
-    elif "8" in msgText:
+    elif "7" in msgText:
+        pullMembersMore(msg, u'2017湾区实习工作群', CurUserName)
+        sleep(0.5)
         pullMembersMore(msg, u'Stanford校友群', CurUserName)
         sleep(0.5)
-    elif "9" in msgText:
+    elif "8" in msgText:
         pullMembersMore(msg, u'Finding 莹颖群2', CurUserName)
         sleep(0.5)
     else:
