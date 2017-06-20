@@ -14,11 +14,11 @@ itchat.auto_login(enableCmdQR=2,hotReload=True)
 itchat.get_chatrooms(update=True)
 
 v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
-v1= u"回复 1 加CS刷题、竞赛、面试;健身;戒游戏群\n"
-v2= u"回复 2 加信用卡爱好者、hao羊毛爱好者群\n"
+v1= u"回复 1 加CS刷题、竞赛、面试;健身;\n"
+v2= u"回复 2 加亚马逊免费物品群;桌游群\n"
 v3= u"回复 3 加湾区、旧金山二手货、车群;\n"
 v4= u"回复 4 加湾区、旧金山租房群.\n"
-v5= u"回复 5 加湾区饮食文化交流，桌游群\n"
+v5= u"回复 5 加湾区饮食文化交流;戒游戏群\n"
 v6= u"回复 6 加湾区护肤品化妆品.\n"
 v7= u"回复 7 加湾区实习工作群；Stanford校友群，非校友请勿进此群，谢谢.\n"
 v8= u"回复 8 加Finding Yingying 群，家人校友都在努力～.\n"
@@ -105,12 +105,10 @@ def tuling_reply(msg):
         sleep(0.5)
         pullMembersMore(msg, u'天天健身', CurUserName)
         sleep(0.5)
-        pullMembersMore(msg, u'天天剁手', CurUserName)
-        sleep(0.5)
     elif "2" in msgText:
-        pullMembersMore(msg, u'天天refer', CurUserName)
-        sleep(0.5)
         pullMembersMore(msg, u'天天Hao', CurUserName)
+        sleep(0.5)
+        pullMembersMore(msg, u'Stanford湾区桌游', CurUserName)
         sleep(0.5)
     elif "3" in msgText:
         pullMembersMore(msg, u'Stanford湾区二手车', CurUserName)
@@ -123,9 +121,9 @@ def tuling_reply(msg):
         pullMembersMore(msg, u'Stanford旧金山租房', CurUserName)
         sleep(0.5)
     elif "5" in msgText:
-        pullMembersMore(msg, u'Stanford湾区桌游', CurUserName)
-        sleep(0.5)
         pullMembersMore(msg, u'Stanford湾区饮食', CurUserName)
+        sleep(0.5)
+        pullMembersMore(msg, u'天天剁手', CurUserName)
         sleep(0.5)
     elif "6" in msgText:
         pullMembersMore(msg, u'Stanford湾区护肤品', CurUserName)
