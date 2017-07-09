@@ -15,13 +15,13 @@ itchat.get_chatrooms(update=True)
 
 v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
 v1= u"回复 1 加CS刷题、竞赛、面试;健身;\n"
-v2= u"回复 2 加亚马逊免费物品群;桌游群\n"
+v2= u"回复 2 北美CPA,REG刷题群;桌游群\n"
 v3= u"回复 3 加湾区、旧金山二手货、车群;\n"
 v4= u"回复 4 加湾区、旧金山租房群.\n"
-v5= u"回复 5 加湾区饮食文化交流;戒游戏群\n"
-v6= u"回复 6 加湾区护肤品化妆品.\n"
+v5= u"回复 5 加湾区厨艺分享;戒游戏群\n"
+v6= u"回复 6 加湾区护肤品化妆品.加北美母婴总群.\n"
 v7= u"回复 7 加湾区实习工作群；Stanford校友群，非校友请勿进此群，谢谢.\n"
-v8= u"回复 8 加Finding Yingying 群，家人校友都在努力～.\n"
+v8= u"回复 8 加北美信用卡爱好者；Finding Yingying 群，家人校友都在努力～.\n"
 v9= u"回复 9 加cmu湾区行李保管中美互运、Stanford,UCD拼车搭车群.\n"
 vT =v0+v1+v2+v3+v4+v5+v6+v7+v8+v9
 #Chaoran userid:@ef633e828340000b5518a18f66daefbf8f307a1fa96d405288a885014d8c25d5
@@ -107,7 +107,7 @@ def tuling_reply(msg):
         pullMembersMore(msg, u'天天健身', CurUserName)
         sleep(0.5)
     elif "2" in msgText:
-        pullMembersMore(msg, u'天天Hao', CurUserName)
+        pullMembersMore(msg, u'北美CPA', CurUserName)
         sleep(0.5)
         pullMembersMore(msg, u'Stanford湾区桌游', CurUserName)
         sleep(0.5)
@@ -122,12 +122,14 @@ def tuling_reply(msg):
         pullMembersMore(msg, u'Stanford旧金山租房', CurUserName)
         sleep(0.5)
     elif "5" in msgText:
-        pullMembersMore(msg, u'Stanford湾区饮食', CurUserName)
+        pullMembersMore(msg, u'Stanford湾区厨艺', CurUserName)
         sleep(0.5)
         pullMembersMore(msg, u'天天剁手', CurUserName)
         sleep(0.5)
     elif "6" in msgText:
         pullMembersMore(msg, u'Stanford湾区护肤品', CurUserName)
+        sleep(0.5)
+        pullMembersMore(msg, u'北美妈妈', CurUserName)
         sleep(0.5)
     elif "7" in msgText:
         pullMembersMore(msg, u'2017湾区实习工作群', CurUserName)
@@ -135,7 +137,9 @@ def tuling_reply(msg):
         pullMembersMore(msg, u'Stanford校友群', CurUserName)
         sleep(0.5)
     elif "8" in msgText:
-        pullMembersMore(msg, u'Finding 莹颖群2', CurUserName)
+        pullMembersMore(msg, u'北美信用', CurUserName)
+        sleep(0.5)
+        pullMembersMore(msg, u'找莹颖', CurUserName)
         sleep(0.5)
     elif "9" in msgText:
         pullMembersMore(msg, u'Stanford,UCD', CurUserName)
