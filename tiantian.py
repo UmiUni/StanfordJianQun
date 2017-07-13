@@ -23,7 +23,8 @@ v6= u"回复 6 加湾区护肤品化妆品.加北美母婴总群.\n"
 v7= u"回复 7 加湾区实习工作群；Stanford校友群，非校友请勿进此群，谢谢.\n"
 v8= u"回复 8 加北美信用卡爱好者；Finding Yingying 群，家人校友都在努力～.\n"
 v9= u"回复 9 加cmu湾区行李保管中美互运、Stanford,UCD拼车搭车群.\n"
-vT =v0+v1+v2+v3+v4+v5+v6+v7+v8+v9
+v10= u"回复 10 加线上KTV开嗓🎙️北美总群;\n"
+vT =v0+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10
 #Chaoran userid:@ef633e828340000b5518a18f66daefbf8f307a1fa96d405288a885014d8c25d5
 #汪灵欣 userid:@eb21513f32b62cd9773abc2fd5531ee05ca09af4ca926fbf896d8c89f29e46cc
 #groups= {'@@6cdcfcb7dc00e7d546464ba702151143e1bf4aa9f72aa6e2559b86469e9a2481':'天天VIP','@@0515f86f31ec80ce4d4238a9ada8fdc0dd0900cc017f87c17df8ee49fb6d4663':'雷孙王'}
@@ -101,7 +102,7 @@ def tuling_reply(msg):
     else:
         usersDict[CurUserName] = 1
     msgText = msg['Text']
-    if "1" in msgText:
+    if "1" in msgText and ("10" not in msgText):
         pullMembersMore(msg, u'天天刷题', CurUserName)
         sleep(0.5)
         pullMembersMore(msg, u'天天健身', CurUserName)
@@ -145,6 +146,9 @@ def tuling_reply(msg):
         pullMembersMore(msg, u'Stanford,UCD', CurUserName)
         sleep(0.5)
         pullMembersMore(msg, u'cmu湾区行李保管', CurUserName)
+        sleep(0.5)
+    elif "10" in msgText:
+        pullMembersMore(msg, u'线上KTV', CurUserName)
         sleep(0.5)
     else:
         itchat.send_msg(vT, CurUserName)
