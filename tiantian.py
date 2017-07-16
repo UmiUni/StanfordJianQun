@@ -181,15 +181,15 @@ def text_reply(msg):
     if msg['ActualNickName']=="超然":
       content = msg['Content']
       if(content[0]=="@"):
-        arr = content.split()
+        arr = content.rsplit(None,1)
         if "广告" in arr[1]:
           delUser = searchUser(msg['User']['MemberList'],arr[0])
           itchat.delete_member_from_chatroom(msg['FromUserName'],[{'UserName':delUser}])
-          msg.user.send('谢谢群主:超然，已飞~😊')
+          msg.user.send('谢谢，已清除~😊')
 
 def searchUser(users,target):
   for user in users:
-    if(user['NickName']==target[1:]):
+    if(user['NickName']==target[1:] or user['DisplayName']==target):
       return user['UserName']
 
     '''  
