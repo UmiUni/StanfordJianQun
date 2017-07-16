@@ -174,9 +174,9 @@ def text_reply(msg):
     if "@Stanford加群" in msg['Content']:
         replyS = get_response(msgS)
         if msg.actualNickName.count("@")>=2:
-            msg.user.send(u'%s' % (replyS+'~想进群加我😊'))
+            msg.user.send(u'%s' % (replyS+'~想进群加我😊 '))
         else:
-            msg.user.send(u'@%s\u2005%s' % (msg.actualNickName, replyS+'~想进群加我😊'))
+            msg.user.send(u'@%s\u2005%s' % (msg.actualNickName, replyS+'~想进群加我😊 '))
     '''
     if msg['ActualNickName']=="超然":
       content = msg['Content']
