@@ -11,7 +11,7 @@ sys.setdefaultencoding('utf8')
 import re
 itchat.auto_login(enableCmdQR=2,hotReload=True)
 itchat.get_chatrooms(update=True)
-
+usersDict = {}
 chatGroups =[ 
 u"天天刷题",u"天天健身",
 u"北美CPA",u"Stanford湾区桌游",
@@ -35,7 +35,7 @@ v6= u"回复 5 加湾区护肤品化妆品.加北美母婴总群.\n"
 v7= u"回复 6 加湾区实习工作群；Stanford校友群，非校友请勿进此群，谢谢.\n"
 v8= u"回复 7 加北美信用卡爱好者；Finding Yingying 群，家人校友都在努力～.\n"
 v9= u"回复 8 加cmu湾区行李保管中美互运、Stanford,UCD拼车搭车群.\n"
-v10= u"回复9 加线上KTV开嗓🎙️北美总群;\n"
+v10= u"回复 9 加线上KTV开嗓🎙️北美总群;\n"
 vT =v0+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10
 
 @itchat.msg_register('Friends')
@@ -74,13 +74,15 @@ def tuling_reply(msg):
     else:
         usersDict[CurUserName] = 1
     msgText = msg['Text']
-    x = re.findall(r'\d+', string)[0]
-    if(x>=0 and x<=9):
-      pullMembersMore(msg, chatGroups[x*2], CurUserName)
-      sleep(0.5)
-      if(x!=9)
-        pullMembersMore(msg, chatGroups[x*2+1], CurUserName)
+    x = re.findall(r'\d+', msgText)
+    if(len(x) >0):
+      y= int(x[0])
+      if(y>=0 and y<=9):
+        pullMembersMore(msg, chatGroups[y*2], CurUserName)
         sleep(0.5)
+        if(y!=9):
+          pullMembersMore(msg, chatGroups[y*2+1], CurUserName)
+          sleep(0.5)
     itchat.send_msg(vT, CurUserName)
     sleep(0.5)
 
