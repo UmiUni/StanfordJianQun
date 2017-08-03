@@ -55,9 +55,10 @@ def delFromAllGroup(content):
 def delUser(roomId, content):
   ret = itchat.delete_member_from_chatroom(roomId,[{'UserName':searchUser(getChatroomMemberList(roomId),content)}])
   if(ret):
-    itchat.send('为保持群内清洁,已清除广告号~😊',toUserName=roomId)
+    itchat.send('谢谢群主@小宇@超然，为保持群内清洁,已清除广告号~😊',toUserName=roomId)
 def searchUser(users,target):
   for user in users:
+    #print user['NickName']+" "+user['DisplayName']+" "+target
     if( (user['NickName']!='' and user['NickName'] in target) or ((user['DisplayName']!='') and (user['DisplayName'] in target))):
         #or ((user['ActualNickName']!='') and (user['ActualNickName'] in target)))
       return user['UserName']

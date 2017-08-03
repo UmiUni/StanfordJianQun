@@ -9,6 +9,7 @@ from time import sleep
 reload(sys)  
 sys.setdefaultencoding('utf8')
 import re
+from xiaozhushou_util import *
 itchat.auto_login(enableCmdQR=2,hotReload=True)
 itchat.get_chatrooms(update=True)
 usersDict = {}
@@ -65,7 +66,7 @@ def get_response(msg):
 def tuling_reply(msg):
     CurUserName = msg['FromUserName']
     #print(json.dumps(response)+"\n")
-    print("userid:"+CurUserName+"\n") 
+    #print("userid:"+CurUserName+"\n") 
     if(CurUserName in usersDict):
         usersDict[CurUserName] = usersDict[CurUserName] + 1
         if(usersDict[CurUserName] >= 10):
