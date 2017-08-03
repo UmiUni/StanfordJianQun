@@ -24,7 +24,8 @@ def add_friend(msg):
 @itchat.msg_register(itchat.content.TEXT)
 def tuling_reply(msg):
   CurUserName = msg['FromUserName']
-  preventAbuseTalking(CurUserName)
+  if(preventAbuseTalking(CurUserName)):
+    return
   sendGroupInviteMsg(msg,CurUserName)
 
 #send group invite msg according to digits
