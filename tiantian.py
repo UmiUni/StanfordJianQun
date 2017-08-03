@@ -26,7 +26,7 @@ u'Stanford湾区护肤品',u'北美妈妈',
 u'2017湾区实习工作群',u'Stanford校友群',
 u'北美信用',u'找莹颖',
 u'Stanford,UCD',u'cmu湾区行李保管',
-u'线上KTV',
+u'线上KTV'
 ]
 
 v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
@@ -60,6 +60,7 @@ def tuling_reply(msg):
     #send group invite msg according to digits
     msgText = msg['Text']
     x = re.findall(r'\d+', msgText)
+    print x
     if(len(x) >0):
       y= int(x[0])
       if(y>=0 and y<=9):
