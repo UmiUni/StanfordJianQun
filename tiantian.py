@@ -49,9 +49,9 @@ def tuling_reply(msg):
     #prevent abusing talking and adding
     if(CurUserName in usersDict):
         usersDict[CurUserName] = usersDict[CurUserName] + 1
-        if(usersDict[CurUserName] >= 11):
+        if(usersDict[CurUserName] >= 16):
           return
-        if(usersDict[CurUserName] >= 10):
+        if(usersDict[CurUserName] >= 15):
           itchat.send_msg(u'您已达到今日加群上限，请明日再来～😊', CurUserName)
           return
     else:

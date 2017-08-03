@@ -10,7 +10,6 @@ from time import sleep
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-
 @itchat.msg_register('Friends')
 def add_friend(msg):
     itchat.add_friend(**msg['Text'])
