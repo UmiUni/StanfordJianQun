@@ -19,7 +19,7 @@ settings.init()
 @itchat.msg_register('Friends')
 def add_friend(msg):
     itchat.add_friend(**msg['Text'])
-    itchat.send_msg(vT, msg['RecommendInfo']['UserName'])
+    itchat.send_msg(settings.vT, msg['RecommendInfo']['UserName'])
 
 @itchat.msg_register(itchat.content.TEXT)
 def tuling_reply(msg):
