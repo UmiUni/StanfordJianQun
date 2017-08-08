@@ -18,6 +18,7 @@ def init():
   ]
 
   v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
+  v00=u"每天只能加3个群哦;\n"
   v1= u"回复 0 加CS刷题、竞赛、面试;健身;\n"
   v2= u"回复 1 北美CPA,REG刷题群;桌游群\n"
   v3= u"回复 2 加湾区、旧金山二手货、车群;\n"
@@ -28,7 +29,7 @@ def init():
   v8= u"回复 7 加北美信用卡爱好者；Finding Yingying 群，家人校友都在努力～.\n"
   v9= u"回复 8 加cmu湾区行李保管中美互运、Stanford,UCD拼车搭车群.\n"
   v10= u"回复 9 加线上KTV开嗓🎙️北美总群;\n"
-  vT =v0+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10
+  vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10
 
   usersDict = {}
   admins=[]
