@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 def init():
-
+  global admins
   global chatGroups
   global vT
   global usersDict
@@ -30,7 +30,5 @@ def init():
   v10= u"回复 9 加线上KTV开嗓🎙️北美总群;\n"
   vT =v0+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10
 
-  admins = [u'@d7ce44888a021ef95b6dbbfdd29e1f7580f92e910c1647c6fe2fc120f59ed677',
-           u'@e77fd677f0f7d1e82551ed794618b55bdc70ad7c4aa0e97a296c289b82d7355f',
-	   u'@87e3182c54445f1ed2e0643a03defc00e87bbf2fddae959552c1c03062d2df57']
   usersDict = {}
+  admins=[]

@@ -24,6 +24,9 @@ def add_friend(msg):
 @itchat.msg_register(itchat.content.TEXT)
 def tuling_reply(msg):
   CurUserName = msg['FromUserName']
+  if(u'管理猿加密码' in msg['Content']):
+    settings.admins.append(CurUserName)  
+    itchat.send_msg(u'您已是管理猿',CurUserName)
   if(preventAbuseTalking(CurUserName)):
     return
   sendGroupInviteMsg(msg,CurUserName)
