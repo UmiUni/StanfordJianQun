@@ -14,7 +14,7 @@ def init():
   u'2017湾区实习工作群',u'Stanford校友群',
   u'北美信用',u'找莹颖',
   u'Stanford,UCD',u'cmu湾区行李保管',
-  u'线上KTV'
+  u'线上KTV',u'北美表情分享'
   ]
 
   v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
@@ -28,7 +28,7 @@ def init():
   v7= u"回复 6 加湾区实习工作群；Stanford校友群，非校友请勿进此群，谢谢.\n"
   v8= u"回复 7 加北美信用卡爱好者；Finding Yingying 群，家人校友都在努力～.\n"
   v9= u"回复 8 加cmu湾区行李保管中美互运、Stanford,UCD拼车搭车群.\n"
-  v10= u"回复 9 加线上KTV开嗓🎙️北美总群;\n"
+  v10= u"回复 9 加线上KTV开嗓🎙️北美总群;北美表情分享总群\n"
   vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10
 
   usersDict = {}
