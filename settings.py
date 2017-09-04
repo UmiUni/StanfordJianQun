@@ -4,6 +4,8 @@ def init():
   global chatGroups
   global vT
   global usersDict
+  global ADMIN
+
   chatGroups =[ 
   u"天天刷题",u"天天健身",
   u"北美CPA",u"Stanford湾区桌游",
@@ -29,7 +31,9 @@ def init():
   v8= u"回复 7 加北美信用卡爱好者；Finding Yingying 群，家人校友都在努力～.\n"
   v9= u"回复 8 加cmu湾区行李保管中美互运、Stanford,UCD拼车搭车群.\n"
   v10= u"回复 9 加线上KTV开嗓🎙️北美总群;北美表情分享总群\n"
-  vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10
+  v11= u"回复 99 查看【北美加群小助手Jogchat.comi】\n"
+  vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10+v11
 
   usersDict = {}
   admins=[]
+  ADMIN = u'Stanford湾区加群助手🐰'
