@@ -31,7 +31,7 @@ def init():
   v8= u"回复 7 加北美信用卡爱好者；Finding Yingying 群，家人校友都在努力～.\n"
   v9= u"回复 8 加cmu湾区行李保管中美互运、Stanford,UCD拼车搭车群.\n"
   v10= u"回复 9 加线上KTV开嗓🎙️北美总群;北美表情分享总群\n"
-  v11= u"回复 99 查看【北美加群小助手Jogchat.com】\n"
+  v11= u"回复 99 查看【北美加群小助手Jogchat.com】小程序二维码\n"
   vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10+v11
 
   usersDict = {}
