@@ -20,7 +20,7 @@ def init():
   ]
 
   v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
-  v00=u"每天只能加3个群哦;\n"
+  v00=u"每天只能加4个群哦;\n"
   v1= u"回复 0 加CS刷题、竞赛、面试;健身;\n"
   v2= u"回复 1 北美CPA,REG刷题群;桌游群\n"
   v3= u"回复 2 加湾区、旧金山二手货、车群;\n"
@@ -36,4 +36,4 @@ def init():
 
   usersDict = {}
   admins=[]
-  ADMIN = u'Stanford湾区加群助手🐰'
+  ADMIN = u'Stanford湾区加群助手'
