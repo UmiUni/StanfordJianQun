@@ -10,7 +10,7 @@ def init():
 
   chatGroups =[ 
   u"leetcode天天",u"天天健身",
-  u"北美CPA",u"Stanford湾区桌游",
+  u"北美CPA",u"Stanford湾区活动",
   u'Stanford湾区二手车',u'Stanford湾区二手货',
   u'Stanford湾区租房',u'Stanford旧金山租房',
   u'Stanford湾区厨艺',u'北美游戏交流',
@@ -22,9 +22,9 @@ def init():
 
   v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
   v00=u"每天只能加4个群哦;\n"
-  v1= u"回复 0 加CS刷题、竞赛、面试;健身;\n"
-  v2= u"回复 1 北美CPA,REG刷题群;桌游群\n"
-  v3= u"回复 2 加湾区、旧金山二手货、车群;\n"
+  v1= u"回复 0 加CS刷题竞赛面试(leetcode);天天健身;\n"
+  v2= u"回复 1 北美CPA,REG刷题群;Stanford湾区活动群\n"
+  v3= u"回复 2 加湾区二手货、二手车群;\n"
   v4= u"回复 3 加湾区、旧金山租房群.\n"
   v5= u"回复 4 加湾区厨艺分享;北美游戏交流总群\n"
   v6= u"回复 5 加湾区护肤品化妆品;加北美母婴总群.\n"
