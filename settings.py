@@ -34,7 +34,7 @@ def init():
   v9= u"回复 8 加线上KTV开嗓🎙️北美总群;北美表情分享总群.\n"
   v10= u"回复 9 加开战leetcode群(每周一战）。\n"
   v11= u"回复 99 查看【北美加群小助手Jogchat.com】\n微信公众号二维码加纽约、芝加哥、三番、西雅图等群\n"
-  vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v11
+  vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10+v11
 
   usersDict = {}
   admins=[]
