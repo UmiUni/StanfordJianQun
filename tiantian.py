@@ -35,7 +35,7 @@ def sendGroupInviteMsg(msg,CurUserName):
   x = re.findall(r'\d+', msgText)
   if(len(x) >0):
     y= int(x[0])
-    if(y>=0 and y<=9):
+    if(y>=0 and y<=10):
       if(preventAbuseTalking(CurUserName)):
         return
       pullMembersMore(msg, settings.chatGroups[y*2], CurUserName)
