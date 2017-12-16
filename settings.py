@@ -12,7 +12,7 @@ def init():
   u"leetcode天天",u"天天健身",
   u"北美CPA",u"Stanford湾区活动",
   u'Stanford湾区二手车',u'Stanford湾区二手货',
-  u'Stanford湾区租房',u'Stanford旧金山租房',
+  u'Stanford湾区租房总群2',u'Stanford旧金山租房',
   u'Stanford湾区厨艺',u'北美游戏交流',
   u'Stanford湾区护肤品',u'北美妈妈',
   u'Stanford硅谷工作内推',u'北美信用',
