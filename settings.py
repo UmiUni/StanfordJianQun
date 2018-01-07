@@ -21,7 +21,7 @@ def init():
   u'开战leetcode',u'Chuck郭律师',
   u'2018 H1B 中中中',u'北美区块链技术交流总群',
   u'Google内推面试刷题群',u'Twitter内推面试刷题群',
-  u'Applen内推面试刷题群',u'Linkedin内推面试刷题群',
+  u'Apple内推面试刷题群',u'Linkedin内推面试刷题群',
   u'Amazon内推面试刷题群',u'PettingPet 伴你宠 官方微信群1'
   ]
 
