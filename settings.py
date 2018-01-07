@@ -19,7 +19,10 @@ def init():
   u'Stanford,UCD',u'cmu湾区行李保管',
   u'线上KTV',u'北美表情分享',
   u'开战leetcode',u'Chuck郭律师',
-  u'2018 H1B 中中中',u'北美区块链技术交流总群'
+  u'2018 H1B 中中中',u'北美区块链技术交流总群',
+  u'Google内推面试刷题群',u'Twitter内推面试刷题群',
+  u'Applen内推面试刷题群',u'Linkedin内推面试刷题群',
+  u'Amazon内推面试刷题群',u'PettingPet 伴你宠 官方微信群1'
   ]
 
   v0= u"您好，😊Stanford加群建群小助手😊为您服务～\n"
@@ -34,9 +37,12 @@ def init():
   v8= u"回复 7 加cmu湾区行李保管中美互运;Stanford,UCD拼车搭车群.\n"
   v9= u"回复 8 加线上KTV开嗓🎙️北美总群;北美表情分享总群.\n"
   v10= u"回复 9 加开战leetcode群(每周一战);加Chuck郭律师美帝绿卡讨论群.\n"
-  v11= u"回复 10 加 H1B中中中群.北美区块链技术交流总群.\n"
-  v12= u"回复 99 查看【北美加群小助手Jogchat.com】\n微信公众号二维码加纽约、芝加哥、三番、西雅图等群\n"
-  vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10+v11+v12
+  v11= u"回复 10 加 H1B中中中群,北美区块链技术交流总群.\n"
+  v12= u"回复 11 加 Google内推面试刷题群,Twitter内推面试刷题群\n"
+  v13= u"回复 12 加 Applen内推面试刷题群,Linkedin内推面试刷题群\n"
+  v14= u"回复 13 加 Amazon内推面试刷题群,PettingPet 伴你宠 官方微信群1\n"
+  v15= u"回复 99 查看【北美加群小助手Jogchat.com】\n微信公众号二维码加纽约、芝加哥、三番、西雅图等群\n"
+  vT =v0+v00+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10+v11+v12+v13+v14+v15
 
   usersDict = {}
   admins=[]
