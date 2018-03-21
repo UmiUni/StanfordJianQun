@@ -19,7 +19,7 @@ def init():
   u'Stanford,UCD',u'cmu湾区行李保管',
   u'线上KTV',u'北美表情分享',
   u'开战leetcode',u'Chuck郭律师',
-  u'2018 H1B 中中中',u'北美区块链技术交流总群',
+  u'Pokemon Go北美交流总群',u'北美区块链技术交流总群',
   u'Google内推面试刷题群',u'Twitter内推面试刷题群',
   u'Apple内推面试刷题群',u'Linkedin内推面试刷题群',
   u'Amazon内推面试刷题群',u'PettingPet 伴你宠 官方微信群1',
@@ -38,7 +38,7 @@ def init():
   v8= u"回复 7 加cmu湾区行李保管中美互运;Stanford,UCD拼车搭车群.\n"
   v9= u"回复 8 加线上KTV开嗓🎙️北美总群;北美表情分享总群.\n"
   v10= u"回复 9 加开战leetcode群(每周一战);加Chuck郭律师美帝绿卡讨论群.\n"
-  v11= u"回复 10 加 H1B中中中群,北美区块链技术交流总群.\n"
+  v11= u"回复 10 加 Pokemon Go北美交流总群,北美区块链技术交流总群.\n"
   v12= u"回复 11 加 Google内推面试刷题群,Twitter内推面试刷题群\n"
   v13= u"回复 12 加 Applen内推面试刷题群,Linkedin内推面试刷题群\n"
   v14= u"回复 13 加 Amazon内推面试刷题群,PettingPet 伴你宠 官方微信群1\n"
