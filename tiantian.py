@@ -20,6 +20,7 @@ settings.init()
 def add_friend(msg):
     itchat.add_friend(**msg['Text'])
     itchat.send_msg(settings.vT, msg['RecommendInfo']['UserName'])
+    itchat.send_msg(settings.v17, msg['RecommendInfo']['UserName'])
 
 @itchat.msg_register(itchat.content.TEXT)
 def tuling_reply(msg):
@@ -32,27 +33,9 @@ def tuling_reply(msg):
 #send group invite msg according to digits
 def sendGroupInviteMsg(msg,CurUserName):
   msgText = msg['Text']
-  x = re.findall(r'\d+', msgText)
-  if(len(x) >0):
-    y= int(x[0])
-    if(y>=0 and y<=13):
-      if msg['FromUserName'] not in settings.admins:
-        if(preventAbuseTalking(CurUserName)):
-          return
-      pullMembersMore(msg, settings.chatGroups[y*2], CurUserName)
-      sleep(0.5)
-      if(y<=13):
-        if msg['FromUserName'] not in settings.admins:
-          if(preventAbuseTalking(CurUserName)):
-            return
-        pullMembersMore(msg, settings.chatGroups[y*2+1], CurUserName)
-        sleep(0.5)
-    elif(y==99):
-      advertiseQR(CurUserName)
-    elif(y==100):
-        pullMembersMore(msg, settings.chatGroups[28], CurUserName)
-        sleep(0.5)
   itchat.send_msg(settings.vT, CurUserName)
+  sleep(0.5)
+  itchat.send_msg(settings.v17,CurUserName)
   sleep(0.5)
 
 #if group chat msg contains kick ads, start kicking logic
